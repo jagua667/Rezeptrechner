@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezeptrechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Rezeptrechner</h1>
+    <div class="container">
+        <h2>Zutaten für</h2>
+        <div class="button-container">
+            <input type="number" id="zutatenInput" min="1" value="1">
+            <button id="aktualisierenButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 3a5 5 0 0 1 4.546 2.916.5.5 0 1 0 .908-.418A6 6 0 1 0 8 14v-1a5 5 0 0 1 0-10z" />
+                    <path d="M7.5 8V1h1v6h-1zm0 7h1v-2h-1v2z" />
+                </svg>Portionen
+            </button>
+        </div>
+    </div>
+    <div>
+        <ul id="zutaten-liste">
+            <li data-menge="7" style="padding-left: 175px;">7 g Rosinen</li>
+            <li data-menge="0.5" style="padding-left: 175px;">0,5 EL Rum</li>
+            <li data-menge="1" style="padding-left: 175px;">1 Ei</li>
+            <li data-menge="7" style="padding-left: 175px;">7 g Zucker</li>
+            <li data-menge="0.25" style="padding-left: 175px;">0,25 Prise(n) Salz</li>
+            <li data-menge="0.25" style="padding-left: 175px;">0,25 Pck. Vanillezucker</li>
+            <li data-menge="100" style="padding-left: 175px;">100 ml Milch</li>
+            <li data-menge="30" style="padding-left: 175px;">30 g Mehl</li>
+            <li data-menge="10" style="padding-left: 175px;">10 g Butter</li>
+        </ul>
+    </div>
+    <div class="naehrwerte">
+        <div class="naehrwerte-title">Nährwerte pro Portion</div>
+        <div class="naehrwerte-container">
+            <div class="naehrwert-item">
+                <span class="label">Kcal</span>
+                <span class="value">403</span>
+            </div>
+            <div class="naehrwert-item">
+                <span class="label">Eiweiß</span>
+                <span class="value">14,09 g</span>
+            </div>
+            <div class="naehrwert-item">
+                <span class="label">Fett</span>
+                <span class="value">17,98 g</span>
+            </div>
+            <div class="naehrwert-item">
+                <span class="label">Kohlenhydrate</span>
+                <span class="value">43,06 g</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

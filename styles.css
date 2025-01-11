@@ -1,0 +1,182 @@
+/* Container für den Text und den Button-Container */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Abstand zwischen Text und Button-Container */
+}
+
+/* Gemeinsamer Button mit Input und Button */
+.button-container {
+    display: flex;
+    width: 225px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #bbb;
+}
+
+input[type="number"] {
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 1rem;
+    width: 25%;
+    border: none;
+    border-right: 2px solid #bbb;
+    border-radius: 0;
+}
+
+#zutaten-liste {
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 800px;
+
+}
+
+.naehrwerte {
+    margin-top: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    position: relative;
+
+}
+
+.naehrwerte::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    /* Startpunkt der verkürzten Border */
+    width: 47.5%;
+    /* Verkürzte Länge */
+    height: 1px;
+    /* Dicke der Border */
+    background-color: black;
+    /* Farbe */
+}
+
+.naehrwerte::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    /* Startpunkt der verkürzten Border */
+    width: 47.5%;
+    /* Verkürzte Länge */
+    height: 1px;
+    /* Dicke der Border */
+    background-color: black;
+    /* Farbe */
+}
+
+.naehrwerte-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 20px;
+    width: 47.5%;
+}
+
+.naehrwert-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid black;
+    width: 110px;
+}
+
+.naehrwert-item:last-child {
+    border-right: none;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.value {
+    font-size: 1.2em;
+}
+
+.naehrwerte p {
+    display: flex;
+    gap: 30px;
+    /* Abstand zwischen den Nährwerten */
+    justify-content: flex-start;
+}
+
+.naehrwerte-title {
+    font-size: 23px;
+    font-weight: 600;
+    width: 47.5%;
+    text-align: left;
+    letter-spacing: 5px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.naehrwerte span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-weight: bold;
+}
+
+#zutaten-liste li {
+    padding: 10px 15px;
+    /* Abstand für den Text */
+    margin: 5px 0;
+    /* Abstand zwischen den Zeilen */
+    font-size: 1rem;
+    /* Schriftgröße */
+    color: #333;
+    /* Textfarbe */
+    background-color: #fff;
+    /* Weißer Hintergrund für alle Zeilen */
+    padding-left: 25px;
+    /* Verschiebt den Text nach rechts */
+}
+
+#zutaten-liste li:nth-child(even) {
+    background-color: #e0e0e04f;
+    border-radius: 8px;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 60px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 300;
+}
+button svg{}
+button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px 10px 10px;
+    font-size: 1rem;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+}
+
+button:hover {
+    background-color: #45a049;
+}
